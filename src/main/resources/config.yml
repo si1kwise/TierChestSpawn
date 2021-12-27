@@ -1,0 +1,144 @@
+# TODO comments
+chest-min-items: 2
+chest-max-items: 4
+
+# TODO comments
+tier-list:
+  'COMMON':
+    1:
+      material: WOODEN_AXE
+      chance: 100
+    2:
+      material: APPLE
+      chance: 100
+    3:
+      material: BOW
+      chance: 50
+    4:
+      material: ARROW
+      minAmount: 2
+      maxAmount: 6
+      chance: 80
+    5:
+      material: DIAMOND
+      minAmount: 1
+      maxAmount: 2
+      chance: 5
+    6:
+      material: GOLDEN_CHESTPLATE
+      chance: 30
+    7:
+      material: LEATHER_LEGGINGS
+      enchantments:
+        1:
+          enchantment: PROJECTILE_PROTECTION
+          enchantmentLevel: 1
+      chance: 60
+    8:
+      material: COOKIE
+      minAmount: 4
+      maxAmount: 8
+      chance: 80
+  'RARE':
+    1:
+      material: STONE_SWORD
+      chance: 100
+    2:
+      material: IRON_SWORD
+      chance: 10
+    3:
+      material: IRON_CHESTPLATE
+      chance: 30
+    4:
+      material: CHAINMAIL_HELMET
+      chance: 50
+    5:
+      material: GOLDEN_APPLE
+      minAmount: 1
+      maxAmount: 3
+      chance: 15
+    6:
+      material: CHAINMAIL_BOOTS
+      chance: 100
+    7:
+      material: CHAINMAIL_LEGGINGS
+      chance: 50
+    8:
+      material: LEATHER_LEGGINGS
+      chance: 60
+    9:
+      material: DIAMOND_HELMET
+      chance: 30
+    10:
+      material: WOODEN_SWORD
+      enchantments:
+        1:
+          enchantment: FIRE_ASPECT
+          enchantmentLevel: 2
+        2:
+          enchantment: MENDING
+          enchantmentLevel: 1
+      chance: 15
+  'MEDIC':
+    1:
+      material: POTION
+      potionType: FIRE_RESISTANCE
+      chance: 100
+    2:
+      material: POTION
+      potionType: INSTANT_HEAL
+      chance: 70
+    3:
+      material: POTION
+      potionType: INSTANT_HEAL
+      potionExtended: false
+      potionUpgraded: true
+      chance: 30
+    4:
+      material: POTION
+      potionType: INSTANT_HEAL
+      potionUpgraded: true
+      chance: 15
+    5:
+      material: POTION
+      potionType: REGEN
+      chance: 30
+    6:
+      material: SPLASH_POTION
+      potionType: INSTANT_HEAL
+      chance: 20
+    7:
+      material: SPLASH_POTION
+      potionType: INSTANT_HEAL
+      potionUpgraded: true
+      chance: 10
+    8:
+      material: CAKE
+      minAmount: 1
+      maxAmount: 3
+      chance: 60
+    9:
+      material: WATER_BUCKET
+      chance: 50
+    10:
+      material: ENDER_PEARL
+      minAmount: 1
+      maxAmount: 2
+      chance: 15
+    11:
+      material: POTION
+      potionType: FIRE_RESISTANCE
+      potionExtended: true
+      chance: 30
+
+# TODO comments
+chest-spawn-locations:
+
+
+# TODO comments
+strings:
+  no-permission: "&cYou don't have permissions to execute this command."
+  chests-spawned: "&bSpawned {amount} chests with loot."
+  chest-spawn-location-added: "&bAdded new spawn location for chest with tier {tier}"
+  chest-spawn-location-removed: "&bRemoved spawn location of chest."
+  error-specify-tier: "&cError: Please specify a tier for this chest."

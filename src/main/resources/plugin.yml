@@ -1,0 +1,18 @@
+name: TierChestSpawn
+version: 1.0.0
+api-version: 1.13
+description: Set custom locations for chests to spawn. You are able to define a tier list with different itemst.
+main: main.loader.Loader
+commands:
+  spawnchests:
+    description: Spawns chests with different loot inside.
+    usage: /spawnchests
+    permission: tcs.spawn
+  setspawnlocation:
+    description: Set a new spawn location for a chest.
+    usage: /setspawnlocation <tier>
+    permission: tcs.setspawnlocation
+  removespawnlocation:
+    description: Removes a spawn location from the list.
+    usage: /removespawnlocation
+    permission: tcs.removespawnlocation
