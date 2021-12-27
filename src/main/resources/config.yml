@@ -1,8 +1,29 @@
-# TODO comments
+#
+# Define the min and max amount of items to spawn in a chest.
+#
 chest-min-items: 2
 chest-max-items: 4
 
-# TODO comments
+#
+# Define the tier list with the following scheme
+# '<tier name>'
+#   1:
+#     material: <material name> - can be found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+#     chance: <chance of item spawn> - the higher, the more likely it will spawn in a chest
+#     minAmount: <min amount>
+#     maxAmount: <max amount>
+#     enchantments:
+#        1:
+#          enchantment: <name of the enchantment>
+#          enchantmentLevel: <level of the enchantment>
+#        2:
+#          enchantment: <name of the enchantment>
+#          enchantmentLevel: <level of the enchantment>
+#
+#     potionType: <potion type> - can be found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionType.html (only for potions)
+#     potionExtended: <true / false> - if set to true, the potion effect lasts the extended time (only for potions)
+#     potionUpgraded: <true / false> - if set to true, the potion is level 2, otherwise it is level 1 (only for potions)
+#
 tier-list:
   'COMMON':
     1:
@@ -131,12 +152,21 @@ tier-list:
       potionExtended: true
       chance: 30
 
-# TODO comments
+#
+# chest spawn locations can and should be set by comment
+# they will be stored with the following scheme:
+# '<xyz location of the chest>':
+#   world: <name of the world>
+#   tier: <tier name as defined in the tier list>
+#   x: <x location>
+#   y: <y location>
+#   z: <z location>
+#   facing: <facing direction of the chest>
+#
 chest-spawn-locations:
 
 
-# TODO comments
-strings:
+messages:
   no-permission: "&cYou don't have permissions to execute this command."
   chests-spawned: "&bSpawned {amount} chests with loot."
   chest-spawn-location-added: "&bAdded new spawn location for chest with tier {tier}"

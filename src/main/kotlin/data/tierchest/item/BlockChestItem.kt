@@ -6,7 +6,7 @@ import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.ItemMeta
 
 /**
- * data class for an item potion
+ * data class for an item
  */
 class BlockChestItem(
     override val material: Material,

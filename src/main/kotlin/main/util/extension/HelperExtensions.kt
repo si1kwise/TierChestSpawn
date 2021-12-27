@@ -9,7 +9,7 @@ import org.bukkit.configuration.file.FileConfiguration
  * Get a message from the config with translated alternate color codes
  */
 fun FileConfiguration.geMessageFromConfig(string: String): String  {
-    val value = this.getConfigurationSection("strings")?.getString(string) ?: ""
+    val value = this.getConfigurationSection("messages")?.getString(string) ?: ""
     return ChatColor.translateAlternateColorCodes('&', value)
 }
 
@@ -18,7 +18,7 @@ fun FileConfiguration.geMessageFromConfig(string: String): String  {
  * and replaced parameter placeholders
  */
 fun FileConfiguration.getMessageFromConfigWithParameter(string: String, regex: String, replacementValue: String): String  {
-    val value = this.getConfigurationSection("strings")?.getString(string)?.replace(regex, replacementValue) ?: ""
+    val value = this.getConfigurationSection("messages")?.getString(string)?.replace(regex, replacementValue) ?: ""
     return ChatColor.translateAlternateColorCodes('&', value)
 }
 
